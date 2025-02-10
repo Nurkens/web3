@@ -1,5 +1,5 @@
 import Router from 'express';
-import productControllers from '../controllers/productControllers';
+import productControllers from '../controllers/productControllers.js';
 const productRouter = new Router();
 
 productRouter.post('/add', productControllers.addProduct);

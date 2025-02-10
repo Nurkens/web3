@@ -1,3 +1,4 @@
+import Product from '../models/Product.js';
 class productControllers{
     async addProduct(req, res){
         try{
@@ -19,7 +20,7 @@ class productControllers{
         }catch(e){
             console.log(e); 
         }
-
+    }
 }
 
 export default new productControllers();
