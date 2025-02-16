@@ -3,8 +3,8 @@ import Order from '../models/Order.js';
 class ordersController{
     async createOrder(req, res){
         try{
-            const {userId, products} = req.body;
-            const order = await Order.create({userId, products});
+            const {userId, productIds} = req.body;
+            const order = await Order.create({userId, productIds});
             return res.json(order); 
         }catch(e){
             console.log(e);
